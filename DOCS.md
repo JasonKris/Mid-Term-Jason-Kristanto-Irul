@@ -36,6 +36,23 @@ sudo service nginx reload
 sudo service nginx status
 sudo nano info.php
 sudo rm info.php
+sudo wget http://lionwiki.0o.cz/download/3.2.11/lionwiki-3.2.11.zip
+ls
+sudo unzip lionwiki-3.2.11.zip
+ls
+cd lionwiki-3.2.11/
+ls
+ls -al
+sudo chmod +7 var
+ls -al
+terminal ls
+sudo mv config.php index.php lang plugins templates var /var/www/html
+ls
+cd /var/www/html
+ls
+sudo rm lionwiki-3.2.11.zip
+ls
+
 
 
 
