@@ -18,3 +18,24 @@ sudo mysql_secure_instalitation
 sudo mariadb
 exit
 
+cd /etc 
+cd nginx/
+cd sites-available/
+ls
+sudo cp default /etc/nginx
+cd /etc/nginx
+sudo mv default midtest
+ls
+sudo mv midtest /etc/nginx/sites-available
+sudo nano midtest 
+sudo  nginx -t
+sudo ln -s /etc/nginx/sites-available/midtest /etc/nginx/sites-enable
+sudo unlink /etc/nginx/sites-enable/default
+sudo service nginx start
+sudo service nginx reload
+sudo service nginx status
+sudo nano info.php
+sudo rm info.php
+
+
+
